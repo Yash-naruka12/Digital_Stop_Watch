@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hind", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#4b6cb7, #182848);
+}
+
+.container-items {
+  display: flex;
+}
+
+.timer {
+  width: 12rem;
+  height: 10rem;
+  background: linear-gradient(#9d50bb77, #6e48aa60);
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.timer::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 0, 0.5);
+  top: -20px;
+  left: -20px;
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+.timer h2,
+h3 {
+  font-size: 2rem;
+}
+
+.btn {
+  padding: 10px 40px;
+  border: none;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #131212;
+  transition: all 0.3s linear;
+}
+
+#start {
+  background-color: rgba(0, 21, 139, 0.473);
+}
+
+#stop {
+  background-color: rgba(255, 0, 0, 0.575);
+}
+
+#reset {
+  background-color: rgba(0, 128, 0, 0.63);
+}
+
+#start:hover {
+  background-color: rgba(0, 21, 139, 0.945);
+}
+
+#stop:hover {
+  background-color: rgba(255, 0, 0, 0.897);
+}
+
+#reset:hover {
+  background-color: rgba(0, 128, 0, 0.89);
+}
